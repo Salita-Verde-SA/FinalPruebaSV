@@ -63,8 +63,8 @@ services:
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=postgres
       - REDIS_HOST=redis
-      # Importante: Permitir peticiones desde el navegador (CORS)
-      - CORS_ORIGINS=http://localhost,http://localhost:3000
+      # CORS configurado para permitir el frontend
+      - CORS_ORIGINS=http://localhost:3000,http://localhost
     depends_on:
       postgres:
         condition: service_healthy
@@ -72,6 +72,12 @@ services:
         condition: service_started
     networks:
       - app-network
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health_check/"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+      start_period: 40s
 
   # =========================================
   # 4. FRONTEND (React + Nginx)
@@ -88,7 +94,8 @@ services:
     ports:
       - "3000:80"  # Accesible en http://localhost:3000
     depends_on:
-      - api
+      api:
+        condition: service_healthy
     networks:
       - app-network
 

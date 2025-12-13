@@ -55,7 +55,11 @@ Bienvenidx al proyecto **TechStore**, donde decidimos reinventar el comercio ele
    ```bash
    npm install
    ```
-3. Levantá el servidor de desarrollo:
+3. Creá un archivo `.env` en el directorio frontend con:
+   ```bash
+   VITE_API_URL=http://localhost:8000
+   ```
+4. Levantá el servidor de desarrollo:
    ```bash
    npm run dev
    ```
