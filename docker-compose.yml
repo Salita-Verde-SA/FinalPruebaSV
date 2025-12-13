@@ -64,7 +64,9 @@ services:
       - POSTGRES_PASSWORD=postgres
       - REDIS_HOST=redis
       # CORS configurado para permitir el frontend
-      - CORS_ORIGINS=http://localhost:3000,http://localhost
+      # - CORS_ORIGINS=http://localhost:3000,http://localhost
+      - CORS_ORIGINS=*
+      
     depends_on:
       postgres:
         condition: service_healthy
