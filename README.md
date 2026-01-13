@@ -1,6 +1,6 @@
-# TechStore - Proyecto Final de Python
+# Nexus Hardware - Proyecto Final de Python
 
-Bienvenidx al proyecto **TechStore**, donde decidimos reinventar el comercio electrónico porque, claramente, el mundo necesitaba otra tienda online. Este proyecto es el resultado de noches interminables, discusiones acaloradas y la pérdida de nuestra fe en la humanidad (y en los deadlines).
+Bienvenidx al proyecto **Nexus Hardware**, donde decidimos reinventar el comercio electrónico porque, claramente, el mundo necesitaba otra tienda online. Este proyecto es el resultado de noches interminables, discusiones acaloradas y la pérdida de nuestra fe en la humanidad (y en los deadlines).
 
 ## Características
 
