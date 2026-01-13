@@ -83,4 +83,4 @@ docker-compose up --build
 
 ---
 
-Desarrollado por Salita Verde SA, porque "TechStore Inc." ya estaba registrado y, sinceramente, no teníamos ganas de pensar otro nombre.
+Desarrollado por Salita Verde SA, porque "Nexus Hardware Inc." ya estaba registrado y, sinceramente, no teníamos ganas de pensar otro nombre.
