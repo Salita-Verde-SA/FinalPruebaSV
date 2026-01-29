@@ -1,6 +1,6 @@
 [submodule "backend"]
 	path = backend
-	url = git@github.com:Salita-Verde-SA/ecommerce-backend
+	url = https://github.com/Salita-Verde-SA/ecommerce-backend
 [submodule "frontend"]
 	path = frontend
-	url = git@github.com:Salita-Verde-SA/ecommerce-frontend
+	url = https://github.com/Salita-Verde-SA/ecommerce-frontend
